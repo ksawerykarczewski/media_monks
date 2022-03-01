@@ -1,0 +1,9 @@
+/*SVG ICON SYSTEM*/
+.icon svg, .icon img {
+  height: 100%;
+  width: .8em;
+  -webkit-transform: translate(-3rem, 0px);
+          transform: translate(-3rem, 0px);
+  fill: currentColor;
+}
+/*# sourceMappingURL=icon.css.map */

@@ -1,0 +1,18 @@
+.icon svg, .icon img {
+    height: 100%;
+    width: .8em;
+}
+
+.icon-normal {
+    fill: $color-red-theme;
+}
+
+.icon-glitch {
+    fill: $color-blue-theme;
+}
+
+@include mq-wide {
+    .icon svg, .icon img {
+        transform: translate(-3rem, 0px);
+    }
+}

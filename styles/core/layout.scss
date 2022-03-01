@@ -1,0 +1,37 @@
+html, body {
+	@include text-rendering;
+	
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+	
+	background-color: $color-background;
+}
+
+body {
+	position: relative;
+}
+
+#__next {
+	position: relative;
+	height: 100%;
+}
+
+// Fluid design layout
+body {
+	font-size: rem($base-font-size);
+}
+html {
+	@include fluidBaseRem(375, 480, 18, 23);
+}
+@include mq-regular {
+    html {
+        @include fluidBaseRem(768, 1024, 18, 24);
+	}
+}
+@include mq-wide {
+    html {
+        @include fluidBaseRem(1440, 1920, 18, 24);
+	}
+}

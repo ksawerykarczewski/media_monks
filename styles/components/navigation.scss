@@ -1,0 +1,48 @@
+.navigation {
+        background-color: #fff;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+        display: block;
+        position: -webkit-sticky;
+        position: sticky;
+        
+    ul {
+        margin: 0;
+        padding: 0;
+        line-height: 2rem;
+        
+	    font-family: futura-book;
+        list-style-type: none;
+    }
+}
+
+@include mq-wide {
+    .navigation {
+        ul {
+            padding: 0 12rem;
+
+            line-height: normal;
+        }
+
+        &__secondary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 1.8rem;
+
+            font-size: 0.5rem;
+
+            border-bottom: 1px solid $color-extra-light-gray;
+        }
+
+        &__main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 3rem;
+        
+            font-size: .7rem;
+
+            border-bottom: 1px solid $color-extra-light-gray;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.video {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.video__background {
+  position: absolute;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: #fafafa;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-4rem, 4rem);
+          transform: translate(-4rem, 4rem);
+  -webkit-clip-path: polygon(96% 30%, 96% 0%, 100% 0%, 100% 70%, 100% 100%, 100% 100%, 90% 100%, 90% 30%);
+          clip-path: polygon(96% 30%, 96% 0%, 100% 0%, 100% 70%, 100% 100%, 100% 100%, 90% 100%, 90% 30%);
+}
+/*# sourceMappingURL=video.css.map */

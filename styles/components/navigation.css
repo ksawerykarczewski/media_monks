@@ -1,0 +1,14 @@
+.navigation ul {
+  padding-left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+.navigation__secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=navigation.css.map */

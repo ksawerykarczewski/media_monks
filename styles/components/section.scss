@@ -1,0 +1,43 @@
+.section {
+    padding: 1rem;
+        
+    border-bottom: 1px solid $color-extra-light-gray;
+}
+
+@include mq-wide {
+    .section {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        border-bottom: none;
+    
+        &--service {
+            justify-content: left;
+
+            li:nth-child(n+2) a::before {
+                display: inline-block;
+                content: '|';
+                padding: 0 .5rem;
+            }
+        }
+    
+        &--browse {
+            justify-content: center;
+
+            li:nth-child(n+2) a {
+                padding-left: 1.5rem;
+            }
+        }
+    
+        &--action {
+            justify-content: flex-end;
+
+            li:nth-child(n+2) a::before {
+                display: inline-block;
+                content: '|';
+                padding: 0 .5rem;
+            }
+        }
+    }
+}
